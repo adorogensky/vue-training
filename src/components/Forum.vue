@@ -1,12 +1,6 @@
 <template>
        <div class="col-large push-top">
 
-        <ul class="breadcrumbs">
-              <li><a href="#"><i class="fa fa-home fa-btn"></i>Home</a></li>
-              <li><a href="category.html">Discussions</a></li>
-              <li class="active"><a href="#">Cooking</a></li>
-          </ul>
-
           <h1>Wasabi vs horseraddish?</h1>
 
           <p>
