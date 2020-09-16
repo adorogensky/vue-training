@@ -3,11 +3,6 @@
 
           <h1>Wasabi vs horseraddish?</h1>
 
-          <p>
-              By <a href="#" class="link-unstyled">Robin</a>, 2 hours ago.
-              <span style="float:right; margin-top: 2px;" class="hide-mobile text-faded text-small">3 replies by 3 contributors</span>
-          </p>
-
           <div class="post-list">
 
               <div class="post">
