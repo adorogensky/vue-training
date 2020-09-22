@@ -1,39 +1,30 @@
 <template>
-       <div class="col-large push-top">
-
-          <h1>Wasabi vs horseraddish?</h1>
-
-          <div class="post-list">
-
-              <div class="post">
-
-                  <div class="user-info">
-                      <a href="#" class="user-name">Robin</a>
-
-                      <a href="#">
-                          <img class="avatar-large" src="static/assets/img/robin.png" alt="">
-                      </a>
-
-                      <p class="desktop-only text-small">107 posts</p>
-
-                  </div>
-
-                  <div class="post-content">
-                      <div>
-                        <p>
-                          Is horseradish and Wasabi the same thing? I've heard so many different things.<br><br>
-                          I want to know once and for all.
-                        </p>
-                      </div>
-                  </div>
-
-                  <div class="post-date text-faded">
-                      6 hours ago
-                  </div>
-              </div>
-
+  <div class="col-large push-top">
+    <h1>Wasabi vs horseraddish?</h1>
+    <div class="post-list">
+      <div class="post">
+        <div class="user-info">
+          <a href="#" class="user-name">Robin</a>
+          <a href="#">
+            <img class="avatar-large" src="static/assets/img/robin.png" alt="">
+          </a>
+          <p class="desktop-only text-small">107 posts</p>
+        </div>
+        <div class="post-content">
+          <div>
+            <p>
+              Is horseradish and Wasabi the same thing? I've heard so many different things.<br><br>
+              I want to know once and for all.
+            </p>
           </div>
+        </div>
+
+        <div class="post-date text-faded">
+          6 hours ago
+        </div>
       </div>
+    </div>
+  </div>
 </template>
 
 <script>
