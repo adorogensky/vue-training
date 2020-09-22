@@ -25,10 +25,7 @@
                           I want to know once and for all.
                         </p>
                       </div>
-                      <a href="#" style="margin-left: auto;" class="link-unstyled" title="Make a change"><i class="fa fa-pencil"></i></a>
                   </div>
-
-
 
                   <div class="post-date text-faded">
                       6 hours ago
