@@ -30,20 +30,6 @@
                   <div class="post-date text-faded">
                       6 hours ago
                   </div>
-
-                  <div class="reactions">
-                      <ul>
-                          <li>💡</li>
-                          <li>❤️</li>
-                          <li>👎</li>
-                          <li>👍</li>
-                          <li>👌</li>
-                      </ul>
-                      <button class="btn-xsmall"><span class="emoji">❤️</span>️ 3</button>
-                      <button class="btn-xsmall active-reaction"><span class="emoji">👌️</span>️ 1</button>
-                      <button class="btn-xsmall">+ <i class="fa fa-smile-o emoji"></i></button>
-                  </div>
-
               </div>
 
           </div>
