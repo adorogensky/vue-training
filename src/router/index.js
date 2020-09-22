@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Thread from '@/components/Thread'
+import Threads from '@/components/Threads'
 
 Vue.use(Router)
 
@@ -8,8 +8,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Thread',
-      component: Thread
+      name: 'Threads',
+      component: Threads
     }
   ]
 })
