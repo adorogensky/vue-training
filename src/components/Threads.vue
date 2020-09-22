@@ -3,11 +3,11 @@
     <div v-for="thread in threads" :key="thread.id" class="col-large push-top">
       <h1>{{ thread.title }}</h1>
       <div class="post-list">
-        <div class="post">
+        <div v-for="postId in thread.posts" :key="postId" class="post">
           <div class="user-info">
-            <a href="#" class="user-name">Robin</a>
+            <a href="#" class="user-name">{{users[posts[postId].userId].name}}</a>
             <a href="#">
-              <img class="avatar-large" src="static/assets/img/robin.png" alt="">
+              <img class="avatar-large" :src="users[posts[postId].userId].avatar" alt="">
             </a>
             <p class="desktop-only text-small">107 posts</p>
           </div>
@@ -43,3 +43,6 @@ export default {
   }
 }
 </script>
+<style scoped>
+  @import "../assets/css/style.css";
+</style>
