@@ -1,26 +1,8 @@
 <template>
   <div>
-    <div v-for="thread in threads" :key="thread.id" class="col-large push-top">
-      <h1>{{ thread.title }}</h1>
+    <div v-for="thread in threads" :key="thread['.key']" class="col-large push-top">
       <div class="post-list">
-        <div v-for="postId in thread.posts" :key="postId" class="post">
-          <div class="user-info">
-            <a href="#" class="user-name">{{users[posts[postId].userId].name}}</a>
-            <a href="#">
-              <img class="avatar-large" :src="users[posts[postId].userId].avatar" alt="">
-            </a>
-            <p class="desktop-only text-small">107 posts</p>
-          </div>
-          <div class="post-content">
-            <div>
-              <p>{{ posts[postId].text }}</p>
-            </div>
-          </div>
-
-          <div class="post-date text-faded">
-            6 hours ago
-          </div>
-        </div>
+        <thread :id="thread['.key']" />
       </div>
     </div>
   </div>
@@ -28,9 +10,13 @@
 
 <script>
 import data from '../data.json'
+import Thread from '@/components/Thread'
 
 export default {
   name: 'Forum',
+  components: {
+    Thread
+  },
   data () {
     return {
       threads: data.threads,
