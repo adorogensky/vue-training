@@ -13,10 +13,7 @@
           </div>
           <div class="post-content">
             <div>
-              <p>
-                Is horseradish and Wasabi the same thing? I've heard so many different things.<br><br>
-                I want to know once and for all.
-              </p>
+              <p>{{ posts[postId].text }}</p>
             </div>
           </div>
 
