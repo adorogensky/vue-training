@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Threads from '@/components/Threads'
-import Thread from '@/components/Thread'
+import ForumThreadList from '@/components/ForumThreadList'
+import ForumThread from '@/components/ForumThread'
 import NotFound from '@/components/NotFound'
 
 Vue.use(Router)
@@ -9,12 +9,12 @@ Vue.use(Router)
 export default new Router({
   routes: [{
     path: '/',
-    name: 'Threads',
-    component: Threads
+    name: 'ForumThreadList',
+    component: ForumThreadList
   }, {
     path: '/thread/:id',
-    name: 'Thread',
-    component: Thread,
+    name: 'ForumThread',
+    component: ForumThread,
     props: true
   }, {
     path: '*',

@@ -28,7 +28,7 @@
 import NotFound from '@/components/NotFound'
 import data from '@/data'
 export default {
-    name: 'Thread',
+    name: 'ForumThread',
     props: ['id'],
     components: {
         NotFound

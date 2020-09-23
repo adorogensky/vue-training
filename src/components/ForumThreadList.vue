@@ -2,7 +2,7 @@
   <div>
     <div v-for="thread in threads" :key="thread['.key']" class="col-large push-top">
       <div class="post-list">
-        <thread :id="thread['.key']" />
+        <forum-thread :id="thread['.key']" />
       </div>
     </div>
   </div>
@@ -10,12 +10,12 @@
 
 <script>
 import data from '../data.json'
-import Thread from '@/components/Thread'
+import ForumThread from '@/components/ForumThread'
 
 export default {
-  name: 'Forum',
+  name: 'ForumThreadList',
   components: {
-    Thread
+    ForumThread
   },
   data () {
     return {
