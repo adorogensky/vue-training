@@ -11,5 +11,6 @@ export default new Router({
       name: 'Threads',
       component: Threads
     }
-  ]
+  ],
+  mode: 'history'
 })
