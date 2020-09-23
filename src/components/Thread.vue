@@ -29,12 +29,13 @@ import NotFound from '@/components/NotFound'
 import data from '@/data'
 export default {
     name: 'Thread',
+    props: ['id'],
     components: {
         NotFound
     },
     data() {
         return {
-            thread: data.threads[this.$route.params.id],
+            thread: data.threads[this.id],
             users: data.users,
             posts: data.posts
         }

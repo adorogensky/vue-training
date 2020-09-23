@@ -14,7 +14,8 @@ export default new Router({
   }, {
     path: '/thread/:id',
     name: 'Thread',
-    component: Thread
+    component: Thread,
+    props: true
   }, {
     path: '*',
     name: 'NotFound',
