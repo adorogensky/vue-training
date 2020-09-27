@@ -1,5 +1,5 @@
 <template>
-    <NotFound v-if="thread === undefined" />
+    <NotFoundPage v-if="thread === undefined" />
     <div v-else class="col-large push-top">
       <h1> {{ thread.title }} </h1>
       <div class="post-list">
@@ -25,13 +25,13 @@
     </div>
 </template>
 <script>
-import NotFound from '@/components/NotFound'
+import NotFoundPage from '@/components/NotFoundPage'
 import data from '@/data'
 export default {
     name: 'ForumThread',
     props: ['id'],
     components: {
-        NotFound
+        NotFoundPage
     },
     data() {
         return {

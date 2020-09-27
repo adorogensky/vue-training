@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import ForumThreadList from '@/components/ForumThreadList'
 import ForumThread from '@/components/ForumThread'
-import NotFound from '@/components/NotFound'
+import NotFoundPage from '@/components/NotFoundPage'
 
 Vue.use(Router)
 
@@ -18,8 +18,8 @@ export default new Router({
     props: true
   }, {
     path: '*',
-    name: 'NotFound',
-    component: NotFound
+    name: 'NotFoundPage',
+    component: NotFoundPage
   }],
   mode: 'history'
 })
