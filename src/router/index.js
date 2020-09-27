@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import ForumThreadList from '@/components/ForumThreadList'
-import ForumThread from '@/components/ForumThread'
+import ForumThreadListPage from '@/components/ForumThreadListPage'
+import ForumThreadPage from '@/components/ForumThreadPage'
 import NotFoundPage from '@/components/NotFoundPage'
 
 Vue.use(Router)
@@ -9,12 +9,12 @@ Vue.use(Router)
 export default new Router({
   routes: [{
     path: '/',
-    name: 'ForumThreadList',
-    component: ForumThreadList
+    name: 'ForumThreadListPage',
+    component: ForumThreadListPage
   }, {
     path: '/thread/:id',
-    name: 'ForumThread',
-    component: ForumThread,
+    name: 'ForumThreadPage',
+    component: ForumThreadPage,
     props: true
   }, {
     path: '*',
