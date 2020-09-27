@@ -1,5 +1,5 @@
 <template>
-    <NotFoundPage v-if="thread === undefined" />
+    <not-found-page v-if="thread === undefined" />
     <div v-else class="col-large push-top">
       <h1> {{ thread.title }} </h1>
       <div class="post-list">
