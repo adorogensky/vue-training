@@ -4,3 +4,8 @@
         <router-link to="/">Go Home</router-link>
     </div>
 </template>
+<style scoped>
+    h1 {
+        font-size: 60px;
+    }
+</style>
