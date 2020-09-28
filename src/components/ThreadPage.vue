@@ -10,7 +10,7 @@ import NotFoundPage from '@/components/NotFoundPage'
 import ThreadPosts from '@/components/ThreadPosts'
 import data from '@/data'
 export default {
-    name: 'ForumThreadPage',
+    name: 'ThreadPage',
     props: ['id'],
     components: {
         NotFoundPage, ThreadPosts
