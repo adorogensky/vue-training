@@ -13,7 +13,7 @@
 import ThreadPostUser from '@/components/ThreadPostUser'
 import ThreadPost from '@/components/ThreadPost'
 export default {
-    name: 'ForumThreadPostList',
+    name: 'ThreadPosts',
     props: ['users', 'posts'],
     components: { ThreadPostUser, ThreadPost }
 }
