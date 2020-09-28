@@ -13,7 +13,7 @@ import data from '../data.json'
 import ThreadPage from '@/components/ThreadPage'
 
 export default {
-  name: 'ForumThreadListPage',
+  name: 'ThreadsPage',
   components: {
     ThreadPage
   },
