@@ -2,11 +2,7 @@
     <div class="post-list">
         <div v-for="post in posts" :key="post['.key']" class="post">
             <thread-post-user :user="users[post.userId]" />
-            <div class="post-content">
-                <div>
-                    <p>{{ post.text }}</p>
-                </div>
-            </div>
+            <thread-post :post="post" />
             <div class="post-date text-faded">
                 6 hours ago
             </div>
@@ -15,9 +11,10 @@
 </template>
 <script>
 import ThreadPostUser from '@/components/ThreadPostUser'
+import ThreadPost from '@/components/ThreadPost'
 export default {
     name: 'ForumThreadPostList',
     props: ['users', 'posts'],
-    components: { ThreadPostUser }
+    components: { ThreadPostUser, ThreadPost }
 }
 </script>
