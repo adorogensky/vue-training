@@ -3,25 +3,19 @@
     <div v-else class="col-large push-top">
       <h1> {{ thread.title }} </h1>
       <thread-posts :users="users" :posts="posts" />
-      <form @submit.prevent="addPost">
-          <div class="form-group">
-              <textarea name="" id="" rows="10" class="form-input" v-model="newPostText"></textarea>
-          </div>
-          <div class="form-actions">
-              <button class="btn-blue">Submit Post</button>
-          </div>
-      </form>
+      <thread-post-editor @add-post="addPost" />
     </div>
 </template>
 <script>
 import NotFoundPage from '@/components/NotFoundPage'
 import ThreadPosts from '@/components/ThreadPosts'
+import ThreadPostEditor from '@/components/ThreadPostEditor'
 import data from '@/data'
 export default {
     name: 'ThreadPage',
     props: ['id'],
     components: {
-        NotFoundPage, ThreadPosts
+        NotFoundPage, ThreadPosts, ThreadPostEditor
     },
     data() {
         return {
@@ -33,21 +27,11 @@ export default {
         }
     },
     methods: {
-        addPost() {
-            const newPostId = 'newPost' + this.postId
-            const post = {
-                text: this.newPostText,
-                userId: 'Miej9zSGMRZKDvMXzfxjVOyv3RF3',
-                threadId: this.threadId,
-                createdAt: Math.floor(Date.now() / 1000),
-                '.key': newPostId
-            }
+        addPost({post}) {
+            const newPostId = 'newPost' + this.postId++;
 
             this.$set(this.posts, newPostId, post);
             this.$set(this.thread.posts, newPostId, post);
-            this.postId++
-
-            this.newPostText = '';
         }
     }
 }
